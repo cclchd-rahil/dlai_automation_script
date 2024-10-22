@@ -83,3 +83,4 @@ def test_empty_password(driver):
     assert error_message[
                'password'] == "Password is required", f"Expected 'Password is required', but got '{error_message['password']}'"
 
+#added a comment to check git pull
