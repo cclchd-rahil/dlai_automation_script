@@ -82,3 +82,7 @@ def test_empty_password(driver):
     error_message = login_page.get_error_messages()
     assert error_message[
                'password'] == "Password is required", f"Expected 'Password is required', but got '{error_message['password']}'"
+
+def test_git():
+    login_page = LoginPage(driver)
+    driver.get("https://dlai.nfttrace.com/login")
